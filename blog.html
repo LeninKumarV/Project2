@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+       
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.navbar-nav{
+    margin-left: 61%;
+}
+.icon{
+    font-size: 22px;
+    margin: 0px 10px;
+}
+#nav .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover{
+    color: orange;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+#nav .navbar .container-fluid .collapse .navbar-nav .icon:hover{
+    color: orange;
+    cursor: pointer;
+    transition: all 0.2s linear;
+} 
+#nav .container-fluid{
+    width: 100%;
+    height:13%;
+    background-color: white;
+    position: fixed;
+    top:0%;
+    right: 0%;
+    box-shadow: 0 0 5px 0 black;
+}
+
+#nav .navbar .container-fluid ul li:nth-child(7) a{
+    color: black;
+}
+#nav .navbar .container-fluid ul li:nth-child(7) a:hover{
+    color: orange;
+}
+
+
+/*footer*/
+#footer #box2 ul li a{
+    color: black;
+    text-decoration: none;
+}
+#footer #insta ul li img{
+    width: 70px;
+    
+}
+#footer #insta ul{
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+}
+#footer .container .row #rymo{
+    padding: 20px 0px;
+    line-height: 30px;
+}
+#footer .container .row #insta ul li img:hover{
+    transform:translateY(10px);
+}
+
+#footer .container .row #insta ul li img:hover{
+        transform:translateY(10px);
+}
+
+/*blogs*/
+.blogs{
+    margin-top: 10%;
+}
+.blogs .row1{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10%;
+    margin-top: 7%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.blogs .row1 img{
+    width: 500px;
+    height: 300px;    
+    overflow: hidden;
+}
+.blogs .row1 .blog1{
+    width: 500px;
+    overflow: hidden;
+}
+.blogs .row1 img:hover{
+    transform: rotate(30deg);
+}
+
+.blogs .row1 .blog2{
+    width: 500px;
+    overflow: hidden;
+    
+}
+.blogs .row1 img:hover{
+    transform: rotate(30deg);
+    opacity: 0.8;
+    transition: all 0.2s linear;
+}
+
+
+
+
+.blogs .row2{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10%;
+    margin-top: 7%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.blogs .row2 img{
+    width: 500px;
+    height: 300px;    
+    overflow: hidden;
+}
+.blogs .row2 .blog3{
+    width: 500px;
+    overflow: hidden;
+}
+.blogs .row2 img:hover{
+    transform: rotate(30deg);
+}
+
+.blogs .row2 .blog4{
+    width: 500px;
+    overflow: hidden;
+    
+}
+.blogs .row2 img:hover{
+    transform: rotate(30deg);
+    opacity: 0.8;
+    transition: all 0.2s linear;
+}
+
+.row3{
+    width: 100%;
+    height: 50vh;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.row3 img:hover{
+    opacity: 0.8;
+}
+
+
+
+.blogs .row4{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10%;
+    margin-top: 7%;
+    text-align: start;
+    font-size: 15px;
+}
+.blogs .row4 img{
+    width: 300px;
+    height: 200px;    
+    overflow: hidden;
+}
+.blogs .row4 .blog5{
+    width: 300px;
+    overflow: hidden;
+}
+.blogs .row4 img:hover{
+    transform: rotate(30deg);
+}
+
+.blogs .row4 .blog6{
+    width: 300px;
+    overflow: hidden;
+    
+}
+.blogs .row4 img:hover{
+    transform: rotate(30deg);
+    opacity: 0.8;
+    transition: all 0.2s linear;
+}
+.blogs .row4 .blog7{
+    width: 300px;
+    overflow: hidden;
+}
+
+
+.blogs h3{
+    font-weight: bolder;
+    margin-left: 8%;
+}
+.blogs h3:after{
+    content: '';
+    width: 50px;
+    height: 5px;
+    background-color: orange;
+    position: absolute;
+    border-radius: 5px;
+    top: 30%;
+    left: 8%;
+}
+
+
+/*footer*/
+#footer .container .row #contact ul :nth-child(7) :hover{
+    cursor: pointer;
+    color: orange;
+}
+
+#nav #sea{
+    position: absolute;
+    top: 150%;
+    right: 100%;
+    width: 20%;
+    height: 40%;
+    border: none;
+    outline: none;
+    border-bottom:1px solid orange;
+    background-color: transparent;
+    transition: all 2s linear;
+}
+#nav #sea.active{
+    left:75%;
+    color: orange;
+    transition: all 5s linear;
+}
+/*media query*/
+@media (max-width:500px) {
+    .blogs{
+        width: 100%;
+        overflow: hidden;
+        margin-top: 20%;
+    }
+    
+
+
+
+
+
+
+
+    .blogs .row1{
+        width: 100%;
+        height: 200vh;
+        
+       
+    }
+    .blogs .row2{
+        width: 100%;
+        height: 200vh;
+    }
+
+    .blogs .row3{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .blogs .row4{
+        width: 100%;
+        height: 200vh;
+    }
+}   
+
+
+</style>
+</head>
+<body>
+    <!--navbar-->
+    <section id="nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./image/img/logo1.png" alt="LOGO"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./shop.html">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact us</a>
+                  </li>
+                  <li class="icon" id="searchicon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                  </li>   
+                  <li class="icon">
+                    <a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                    </svg></a>   
+                  </li>  
+                  <li><input type="text" id="sea"></li>               
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+
+        <!--blogs-->
+        <section class="blogs">
+            <h3>Blogs</h3>
+
+        <div class="row1">
+           <div class="col1">
+                <div class="blog1">
+                    <img src="./image/img/blog/1.jpg" alt="">
+                </div>
+                    <div class="description">
+                        <p>The best way to change your summer <br> wardrobe into autumn wardrobe</p>
+                        <p>jan 11,2023</p>
+                    </div>
+            </div>
+
+            <div class="col2">
+                <div class="blog2">
+                    <img src="./image/img/blog/2.jpg" alt="">
+                </div>
+                    <div class="description">
+                        <p>The best way to change your summer <br> wardrobe into autumn wardrobe</p>
+                        <p>jan 11,2023</p>
+                    </div>
+            </div>
+        </div>
+
+
+        <div class="row2">
+            <div class="col1">
+                 <div class="blog3">
+                     <img src="./image/img/blog/3.jpg" alt="">
+                 </div>
+                     <div class="description">
+                         <p>The best way to change your summer <br> wardrobe into autumn wardrobe</p>
+                         <p>jan 11,2023</p>
+                     </div>
+             </div>
+ 
+             <div class="col2">
+                 <div class="blog4">
+                     <img src="./image/img/blog/4.jpg" alt="">
+                 </div>
+                     <div class="description">
+                         <p>The best way to change your summer <br> wardrobe into autumn wardrobe</p>
+                         <p>jan 11,2023</p>
+                     </div>
+             </div>
+         </div>
+
+
+         <div class="row3">
+             <img src="./image/img/blog/banner.webp" alt="">
+         </div>
+
+
+         <div class="row4">
+            <div class="col1">
+                 <div class="blog5">
+                     <img src="./image/img/blog/1.webp" alt="">
+                 </div>
+                     <div class="description">
+                         <p>The best way to change your summer <br> wardrobe into autumn wardrobe</p>
+                     </div>
+             </div>
+ 
+             <div class="col2">
+                 <div class="blog6">
+                     <img src="./image/img/blog/2.webp" alt="">
+                 </div>
+                     <div class="description">
+                         <p>Lenonvo's smarter devices stoke <br> prfessional possessions</p>
+                     </div>
+             </div>
+
+             <div class="col3">
+                <div class="blog7">
+                    <img src="./image/img/blog/3.webp" alt="">
+                </div>
+                    <div class="description">
+                        <p>Take a 30 tour through a <br> Microsoft datacenter</p>
+                    </div>
+            </div>
+         </div>
+        </section>
+
+
+
+    <!--footer-->
+<footer class="bd-footer py-5 mt-5 bg-dark" id="footer">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-3 mb-3" id="rymo">
+          <a class="d-inline-flex align-items-center mb-2  text-decoration-none" aria-label="Bootstrap">
+            <img src="./image/img/logo2.png" alt="rymo">
+          </a>
+          <ul class="list-unstyled small text-muted">
+            <li class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li class="mb-2">Reprehenderit, et rerum? Optio, dolores! Molestiae, odio illo?</li>
+            <li class="mb-2">Reprehenderit, et rerum? Optio, dolores! Molestiae, odio illo?</li>
+            <li class="mb-2">Analytics by <a href="https://usefathom.com/ref/ADZSBE" target="_blank" rel="noopener">Fathom</a>.</li>
+          </ul>
+          <img src="./image/img/payment.png" alt="payment">
+        </div>
+        
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3 text-muted" id="box2">
+          <h5>Links</h5>
+          <ul class="list-unstyled text-muted">
+            <li class="mb-2"><a  class="text-decoration-none text-muted" href="">MEN</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-muted" href="">WOMEN</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-muted" href="">BOYS</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-muted" href="">GIRLS</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-muted" href="">NEW ARRRIVALS</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-muted" href="">SHOES</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-muted" href="">CLOTHES</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-lg-2 mb-3 text-muted" id="contact">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled text-muted">
+            <li class="mb-2" class="text-decoration-none"><h6>ADDRESS</h6></li>
+            <li>123,STREET NAME,CITY,US</li>
+            <li><h6>PHONE</h6></li>
+            <li>(123)-456-7890</li>
+            <li><h6>EMAIL</h6></li>
+            <li>rymo@gmail.com</li>
+            <li class="mb-2 "> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3 text-muted" id="insta">
+          <h5>Instagram</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><img src="./image/img/insta/1.jpg" alt="insta"></li>
+            <li class="mb-2"><img src="./image/img/insta/2.jpg" alt="insta"></li>
+            <li class="mb-2"><img src="./image/img/insta/3.jpg" alt="insta"></li>
+            <li class="mb-2"><img src="./image/img/insta/4.jpg" alt="insta"></li>
+            <li class="mb-2"><img src="./image/img/insta/5.jpg" alt="insta"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    <script>
+    let searchForm = document.querySelector('#sea');
+
+    document.querySelector('#searchicon').onclick = () =>{
+    searchForm.classList.toggle('active');
+    }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
